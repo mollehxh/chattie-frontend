@@ -12,9 +12,13 @@ export const Avatar = ({ online }: { online?: boolean }) => {
 };
 
 const Img = () => (
-  <Image
-    className="inline-block h-12 w-12 rounded-full ring ring-zinc-800 bg-clip-content"
-    src="https://preview.redd.it/5unn16axx1v81.jpg?width=640&crop=smart&auto=webp&s=19fcd170aadc63147c0a4492f43017a17f052a02"
-    alt="Picture of the user"
-  />
+  <div className="flex w-12 h-12 ">
+    <Image
+      className="rounded-full ring ring-zinc-800"
+      src="https://preview.redd.it/5unn16axx1v81.jpg?width=640&crop=smart&auto=webp&s=19fcd170aadc63147c0a4492f43017a17f052a02"
+      alt="Picture of the author"
+      layout="fill"
+      objectFit="cover"
+    />
+  </div>
 );
